@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact Us</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #e4eaff, #d1d9ff, #b3bfff);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact-container {
+    width: 100%;
+    max-width: 900px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-form h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+form input, form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 400px;
+}
+
+form button {
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    background: #0066cc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #004c99;
+}
+
+.contact-info {
+    text-align: center;
+    padding: 20px;
+    background: #f9f9f9;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+.contact-info h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-info .founder {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.contact-info .info-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.contact-info .info-item img.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.contact-info a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <!-- Contact Form Section -->
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form id="contact-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <!-- Contact Information Section -->
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <div class="founder">
+                <strong>Founder:</strong> Eneeyan
+            </div>
+            <div class="info-item">
+                <img src="email.png" alt="Email Icon" class="icon">
+                <span>Email:</span> <a href="mailto:iqmathindia@gmail.com">iqmathindia@gmail.com</a>
+            </div>
+            <div class="info-item">
+                <img src="white-phone-icon-png--clipart-best-30.png" alt="Phone Icon" class="icon">
+                <span>Phone:</span> <a href="tel:+919360960219">+91 9360960219</a>
+            </div>
+            <div class="info-item">
+                <img src="linkedin.jpeg" alt="LinkedIn Icon" class="icon">
+                <span>LinkedIn:</span> <a href="https://www.linkedin.com/company/iqmath-technologies/posts/?feedView=all" target="_blank">linkedin.com/in/iqmath</a>
+            </div>
+            <div class="info-item">
+                <img src="location.jpeg" alt="Address Icon" class="icon">
+                <span>Address:</span> 1/339, Kulakkarai Main Rd, Thoraipakkam, Chennai, Tamil Nadu 600096
+            </div>
+        </div>
+    </div>
+
+   
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    if (name && email && message) {
+        alert(`Thank you, ${name}! Your message has been sent successfully.`);
+        // Reset the form
+        document.getElementById('contact-form').reset();
+    } else {
+        alert('Please fill in all the required fields.');
+    }
+});
+
+    </script>
+</body>
+</html>

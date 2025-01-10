@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #c2d3ff, #a8c1ff, #8eaaf2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.internship-container {
+    text-align: center;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    color: #777;
+}
+
+.internship-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.internship-card {
+    width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.internship-card:hover {
+    transform: scale(1.05);
+}
+
+.internship-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.internship-info {
+    padding: 15px;
+}
+
+.internship-title {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.internship-description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.internship-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #222;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.internship-button:hover {
+    background-color: #000;
+}

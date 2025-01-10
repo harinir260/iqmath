@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #e4eaff, #d1d9ff, #b3bfff);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .videos-section {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .video-card {
+            flex: 1;
+            text-align: center;
+            background: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-card img {
+            width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .video-card img:hover {
+            transform: scale(1.05);
+        }
+
+        .video-card a {
+            text-decoration: none;
+            color: #5c48ee;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .achievements-section {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .achievement {
+            flex: 1;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .achievement img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .achievement h3 {
+            margin-bottom: 10px;
+            color: #5c48ee;
+        }
+
+        .blog-content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-content h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .blog-content p {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to Our Blog</h1>
+            <p>Discover our achievements, explore videos, and learn more through our posts.</p>
+        </header>
+
+        <section class="videos-section">
+            <div class="video-card">
+                <img src="yt1.png" alt="Video 1 Thumbnail">
+                <a href="https://www.youtube.com/watch?v=q6kVdZQLe54" target="_blank">Hackerrank| SQL case studies</a>
+            </div>
+            <div class="video-card">
+                <img src="yt2.png" alt="Video 2 Thumbnail">
+                <a href="https://www.youtube.com/watch?v=65aaipcziy0&t=2s" target="_blank">How to install MySQL in workbench</a>
+            </div>
+            <div class="video-card">
+                <img src="yt3.png" alt="Video 3 Thumbnail">
+                <a href="https://www.youtube.com/watch?v=MC83S5IAQk8&t=1s" target="_blank">Connect database using EXCEL</a>
+            </div>
+        </section>
+
+        <section class="achievements-section">
+            <div class="achievement">
+                <img src="bg.jpg.jpeg" alt="Achievement 1">
+                <h3>Expert Faculty Achievement:</h3>
+                <p>Our institution takes pride in having a team of expert faculty members who bring vast industry experience and academic excellence to the classroom. Their dedication and passion for teaching help shape the future leaders of tomorrow</p>
+            </div>
+            <div class="achievement">
+                <img src="bg2.jpeg" alt="Achievement 2">
+                <h3>Conducting Workshops Achievement</h3>
+                <p>We believe in continuous learning beyond the classroom, and that's why we regularly conduct workshops. These hands-on sessions provide valuable insights into industry trends and allow students to apply their knowledge in real-world scenarios.</p>
+            </div>
+            <div class="achievement">
+                <img src="achment.png" alt="Achievement 3">
+                <h3>Providing Internship Opportunities Achievement</h3>
+                <p>We offer our students the opportunity to gain real-world experience through internships with leading companies. These internships serve as a stepping stone to career success, allowing students to hone their skills and build professional networks</p>
+            </div>
+        </section>
+
+        <section class="blog-content">
+            <h2 style="color: #5c48ee;">Additional Blog Content</h2>
+            <p>At our institution, we are committed to fostering a learning environment that not only prioritizes academic excellence but also focuses on holistic development. From classroom learning to practical experiences, our goal is to equip students with the skills needed to succeed in their careers and contribute meaningfully to society.</p>
+            <p>We offer a variety of extracurricular activities that help our students build soft skills such as leadership, teamwork, and communication. Our collaborations with industry leaders allow students to interact with professionals, attend seminars, and stay up-to-date with the latest trends and technologies.</p>
+            <p>We believe that education goes beyond textbooks. That's why we provide various resources like career counseling, job placement support, and a well-established alumni network to guide our students throughout their academic journey and into their professional lives.</p>
+            <p>Whether you're a student looking to learn, a professional seeking to upskill, or an organization looking to collaborate with us, we offer opportunities that will help you grow and achieve your goals.</p>
+        </section>
+        
+         
+    </div>
+</body>
+</html>
