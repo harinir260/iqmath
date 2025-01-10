@@ -49,7 +49,7 @@ Contributions are welcome! Create a pull request to improve this project.
 
 ## 📧 **Contact**  
 For any queries, feel free to reach out:  
-**GitHub**:  
+**GitHub**:  https://github.com/harinir260
 
 
 ---
